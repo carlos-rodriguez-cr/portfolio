@@ -11,3 +11,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.layout{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 132px;
+  border-bottom: 3px solid black;
+  margin-bottom: 35px;
+}
+
+.header .logo{
+  flex-grow: 2;
+}
+
+.header .logo h3{
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/*flex: 1 1 auto; se comparte el mismo espacio entre elementos*/
+.header nav{
+  flex-grow: 1;
+}
+.header nav ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.header li {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.header li a{
+  color:black;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.header a:hover{
+  color: orangered;
+
+}
