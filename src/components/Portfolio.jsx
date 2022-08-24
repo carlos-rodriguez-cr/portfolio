@@ -1,7 +1,30 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import { trabajos } from '../data/trabajos';
+
 
 export const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <div className='page'>
+
+      <h1 className='heading'>Portfolio</h1>
+
+      {
+        trabajos.map(trabajo => {
+          //{console.log(trabajo)}
+          return (
+          <article key={trabajo.id}>
+            <span>{trabajo.categorias}</span>
+            <h2><Link to={"/proyecto/"+trabajo.id}>{trabajo.nombre}</Link></h2>
+            <h3>{trabajo.tecnologias}</h3>
+          </article>
+          );
+
+        })
+      }
+
+
+
+    </div>
   )
 }
