@@ -1,30 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import { trabajos } from '../data/trabajos';
-
+import React from "react";
+import { Link } from "react-router-dom";
+import { trabajos } from "../data/trabajos";
+import { ListadoTrabajos } from "./ListadoTrabajos";
 
 export const Portfolio = () => {
   return (
-    <div className='page'>
+    <div className="page">
+      <h1 className="heading">Portfolio</h1>
 
-      <h1 className='heading'>Portfolio</h1>
+      <ListadoTrabajos />
 
-      {
-        trabajos.map(trabajo => {
-          //{console.log(trabajo)}
-          return (
-          <article key={trabajo.id}>
-            <span>{trabajo.categorias}</span>
-            <h2><Link to={"/proyecto/"+trabajo.id}>{trabajo.nombre}</Link></h2>
-            <h3>{trabajo.tecnologias}</h3>
-          </article>
-          );
-
-        })
-      }
-
-
-
+        
     </div>
-  )
-}
+  );
+};
