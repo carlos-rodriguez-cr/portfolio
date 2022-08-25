@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { trabajos } from "../data/trabajos";
+//import { Link } from "react-router-dom";
+//import { trabajos } from "../data/trabajos";
 import { ListadoTrabajos } from "./ListadoTrabajos";
 
 export const Portfolio = () => {

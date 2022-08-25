@@ -7,7 +7,7 @@ export const ListadoTrabajos = ({limite}) => {
 
       <section className="works">
         
-        {trabajos.slice(0,limite).map((trabajo) => {
+        {trabajos.slice(0,limite).map(trabajo => {
           //con .slice muestro los objetos de un array desde la posicion que quiera
           //desde un inico hasta un limite si esta definido como prop en el componente
           //si el limite no esta definido entonces no hay limites
